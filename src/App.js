@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Col, Container, Row,Badge, Alert } from 'react-bootstrap';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Heading from './Heading.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    <Heading />
+
+    <Container variant="success">
+      <Row>
+        <Col sm={6} lg={9}>
+          <Alert variant='info' className='shadow'>
+            <p>
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+            </p>
+            </Alert>
+          </Col>
+          <Col sm={6} lg={3}>
+            <Alert variant='danger' className='shadow'>
+            <p>
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+              the quick brwon fox jumps over the lazy dog the quick brwon fox jumps over the lazy dog
+            </p>
+            </Alert>
+          </Col>
+          </Row>
+    </Container>
+
+
+
+
+
     </div>
   );
 }
